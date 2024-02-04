@@ -1,24 +1,19 @@
-import { Route, Routes } from "react-router-dom";
-import Navbar from "../components/Navbar";
-import Header from "../components/Header";
-import Testimonial from "../components/Testimonial";
-import Products from "../components/Products";
-import Contact from "../components/Contact";
-import Footer from "../components/Footer";
+import Header from "../pages/Header";
+import Testimonial from "../pages/Testimonial";
+import Products from "../pages/Products";
+import Contact from "../pages/Contact";
+import Layout from "../layout/Layout";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Header />
-      <Testimonial />
-      <Products />
-      <Contact />
-      <Routes>
-        <Route path="/products" element={<Products />} />
-      </Routes>
-      <Footer />
-    </>
+    <Layout>
+      <div>
+        <Header />
+        <Testimonial />
+        <Products />
+        <Contact />
+      </div>
+    </Layout>
   );
 }
 

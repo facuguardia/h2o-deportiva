@@ -11,10 +11,10 @@ function Modal() {
     <>
       <button
         onClick={toggleModal}
-        className="inline-flex text-white bg-blue-500 border-0 py-1 px-3 focus:outline-none hover:bg-blue-600 rounded text-lg mt-2"
+        className="flex justify-center items-center px-4 py-2 mt-5 text-xl font-semibold text-white bg-blue-500 border-0 rounded w-[100%] focus:outline-none hover:bg-blue-600"
         type="button"
       >
-        Ver
+        Comprar
       </button>
       {modalVisible && (
         <div
@@ -24,11 +24,20 @@ function Modal() {
           className="fixed top-0 left-0 right-0 z-50 flex items-center justify-center w-full h-full"
         >
           <div className="fixed inset-0 bg-black opacity-50"></div>
-          <div className="relative w-auto max-w-2xl p-4 overflow-x-hidden overflow-y-auto flex justify-center items-center">
-            <div className="relative w-[2000px] h-auto p-5 bg-white rounded-lg shadow dark:bg-gray-700">
-              <div>
-                <div className="flex justify-between items-center pl-4 ">
-                  <h1 className="text-xl text-white font-semibold ">Art 38 - Chupin negro liso</h1>
+          <div className="relative flex items-center justify-center w-full max-w-2xl p-4 overflow-x-hidden overflow-y-auto">
+            <div className="w-full h-auto bg-white rounded-lg shadow dark:bg-gray-700 sm:flex sm:flex-row sm:justify-center">
+              <div className="p-4 sm:w-1/2 sm:flex sm:flex-col sm:items-center">
+                <img
+                  src="./images/items1.jpg"
+                  alt=""
+                  className="w-auto h-72 rounded-xl"
+                />
+              </div>
+              <div className="p-4 sm:w-1/2 sm:flex sm:flex-col sm:items-start">
+                <div className="flex items-center justify-between">
+                  <h1 className="text-xl font-semibold text-white">
+                    Art 38 - Chupin negro liso
+                  </h1>
                   <button
                     onClick={toggleModal}
                     type="button"
@@ -50,30 +59,24 @@ function Modal() {
                     </svg>
                   </button>
                 </div>
-                <div className="flex justify-between items-center py-2 px-4">
-                  <div className="flex items-center gap-4">
-                    <img
-                      src="./images/items1.jpg"
-                      alt=""
-                      className="w-auto h-72 rounded-xl"
-                    />
-                    <div className="flex flex-col gap-4">
-                      <p className="text-gray-300">
-                        Chupin negro liso es una prenda de vestir moderna y
-                        versátil que se adapta perfectamente a las tendencias de
-                        la moda actual. Confeccionado con materiales de alta
-                        calidad, este pantalón chupin ofrece un ajuste ceñido y
-                        cómodo que realza la figura masculina con estilo y
-                        elegancia.
-                        <br />
-                        <br />
-                        <strong className="text-red-400">
-                          Recuerda que la compra se retira en nuestra sucursal
-                        </strong>
-                      </p>
-                      <button className="w-full bg-blue-400 border-blue-700 rounded-full py-2 text-gray-100 text-lg font-semibold flex justify-center items-center shadow-md cursor-pointer hover:bg-blue-400/50">Mercado Pago</button>
-                    </div>
-                  </div>
+                <div className="pt-4">
+                  <p className="text-gray-300">
+                    Chupin negro liso es una prenda de vestir moderna y
+                    versátil que se adapta perfectamente a las tendencias de la
+                    moda actual. Confeccionado con materiales de alta calidad,
+                    este pantalón chupin ofrece un ajuste ceñido y cómodo que
+                    realza la figura masculina con estilo y elegancia.
+                    <br />
+                    <br />
+                    <strong className="text-red-400">
+                      Recuerda que la compra se retira en nuestra sucursal
+                    </strong>
+                  </p>
+                </div>
+                <div className="flex justify-center pb-4">
+                  <button className="flex items-center justify-center w-full max-w-xs py-2 text-lg font-semibold text-gray-100 bg-blue-400 border-blue-700 rounded-full shadow-md cursor-pointer hover:bg-blue-400/50">
+                    Mercado Pago
+                  </button>
                 </div>
               </div>
             </div>
