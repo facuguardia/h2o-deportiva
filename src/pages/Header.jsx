@@ -23,7 +23,7 @@ function Header() {
           </p>
           <div className="flex justify-center">
             <HashLink to="#products">
-              <button className="inline-flex px-6 py-2 text-lg text-white bg-[#DE8A2E] border-0 rounded focus:outline-none hover:bg-orange-400">
+              <button className="inline-flex px-6 py-2 text-lg text-white bg-orange-600 border-0 rounded focus:outline-none hover:bg-[#DE8A2E]">
                 Ver Ofertas
               </button>
             </HashLink>
