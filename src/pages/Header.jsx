@@ -38,7 +38,7 @@ function Header() {
           <img
             className="object-cover object-center rounded "
             alt="hero"
-            src="/images/pngegg.png"
+            src="/images/img-hero.png"
           />
         </div>
       </div>
