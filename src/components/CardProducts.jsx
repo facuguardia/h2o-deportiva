@@ -14,7 +14,7 @@ function CardProducts({image, article, price, description, importantInfo = "Reti
       <h3 className="mb-1 text-xs tracking-widest text-red-500 title-font font-bold">
         SALE
       </h3>
-      <h2 className="text-lg font-medium title-font">
+      <h2 className="text-lg md:text-base font-medium title-font" style={{ whiteSpace: 'nowrap' }}>
         {article}
       </h2>
       <p className="mt-1 text-2xl font-semibold text-right text-white">$ {price}</p>

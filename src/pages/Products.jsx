@@ -61,7 +61,8 @@ const Products = () => {
         </div>
 
         <div className="flex items-center justify-center mt-20">
-          <Link to="/products" target="_blank">
+          <Link to="/shop">
+
             <button className="flex justify-center items-end text-2xl text-white transition-all hover:text-slate-400">
               Ver más
               <IoIosArrowDown className="ml-2" />
