@@ -1,6 +1,6 @@
 function CardTestimonial({ image, name, text }) {
   return (
-    <div className="p-4 mb-6 w-52 h-52 lg:w-1/3 lg:mb-0 card-testimonial">
+    <div className="mb-10">
       <div className="h-full text-center">
         <img
           alt="testimonial"

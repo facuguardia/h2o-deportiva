@@ -1,9 +1,8 @@
 import { useState } from "react";
 import ButtonModal from "./ButtonModal";
-import ButtonClose from "./ButtonClose";
 import CardModal from "./CardModal";
 
-function Modal({ title, description, importantInfo, image}) {
+function Modal({ title, description, importantInfo, image }) {
   const [modalVisible, setModalVisible] = useState(false);
 
   const toggleModal = () => {
@@ -23,10 +22,7 @@ function Modal({ title, description, importantInfo, image}) {
           className="fixed top-0 left-0 right-0 z-50 flex items-center justify-center w-full h-full"
         >
           {/* Fondo opacity */}
-          <div className="fixed inset-0 bg-black opacity-80">
-            {/* Boton cerrar */}
-            <ButtonClose toggleModal={toggleModal} />
-          </div>
+          <div className="fixed inset-0 bg-black opacity-80"></div>
 
           {/* Contenido */}
           <div className="relative flex items-center justify-center w-full max-w-2xl p-4 overflow-x-hidden overflow-y-auto">
@@ -36,6 +32,7 @@ function Modal({ title, description, importantInfo, image}) {
               description={description}
               importantInfo={importantInfo}
               image={image}
+              toggleModal={toggleModal}
             />
           </div>
         </div>

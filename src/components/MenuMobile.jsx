@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
-// Icons
+import { HashLink } from "react-router-hash-link";
+
 import { RiMenu3Fill, RiCloseFill } from "react-icons/ri";
 
 function MenuMobile() {
@@ -18,50 +18,50 @@ function MenuMobile() {
     >
       <nav className="h-screen flex flex-col justify-center items-center">
         {/* Items 1 */}
-        <NavLink
-          to="/"
-          className="w-[90%] h-auto flex justify-center border-b-[1px] border-green-500 px-4 py-3 text-white hover:text-green-500"
+        <HashLink
+          to="#header"
+          className="w-[90%] h-auto flex justify-center border-b-[2px] border-orange-500 px-4 py-3 text-white hover:text-orange-500"
           onClick={closeMenu}
         >
           <span className="text-2xl font-medium flex items-center gap-3">
             Inicio
           </span>
-        </NavLink>
+        </HashLink>
         {/* Items 2 */}
-        <NavLink
-          to="/about"
-          className="w-[90%] h-auto flex justify-center items-center gap-3 border-b-[1px] border-green-500 px-4 py-3 text-white hover:text-green-500"
+        <HashLink
+          to="#products"
+          className="w-[90%] h-auto flex justify-center items-center gap-3 border-b-[2px] border-orange-500 px-4 py-3 text-white hover:text-orange-500"
           onClick={closeMenu}
         >
           <span className="text-2xl font-medium flex items-center gap-3">
-            Acerca
+            Tienda
           </span>
-        </NavLink>
+        </HashLink>
         {/* Items 3 */}
-        <NavLink
-          to="/resume"
-          className="w-[90%] h-auto flex justify-center items-center gap-3 border-b-[1px] border-green-500 px-4 py-3 text-white hover:text-green-500"
+        <HashLink
+          to="#testimonial"
+          className="w-[90%] h-auto flex justify-center items-center gap-3 border-b-[2px] border-orange-500 px-4 py-3 text-white hover:text-orange-500"
           onClick={closeMenu}
         >
           <span className="text-2xl font-medium flex items-center gap-3">
-            Currículum
+            Clientes
           </span>
-        </NavLink>
+        </HashLink>
         {/* Items 4 */}
-        <NavLink
-          to="/projects"
-          className="w-[90%] h-auto flex justify-center items-center gap-3 px-4 py-3 text-white hover:text-green-500"
+        <HashLink
+          to="#contact"
+          className="w-[90%] h-auto flex justify-center items-center gap-3 px-4 py-3 text-white hover:text-orange-500"
           onClick={closeMenu}
         >
           <span className="text-2xl font-medium flex items-center gap-3">
-            Proyectos
+            Revendedores
           </span>
-        </NavLink>
+        </HashLink>
       </nav>
       {/* Button Mobile */}
       <button
         onClick={() => setMenu(!menu)}
-        className="lg:hidden fixed right-4 top-4 text-xl bg-black/80 p-2.5 rounded-full text-[#09e507] z-50"
+        className="lg:hidden fixed right-4 bottom-4 text-xl bg-black/80 p-2.5 rounded-full text-orange-500 z-50"
       >
         {menu ? <RiCloseFill /> : <RiMenu3Fill />}
       </button>

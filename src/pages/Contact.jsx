@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function Contact() {
   return (
     <section id="contact" className="text-gray-600 bg-gray-300 body-font">
-      <div className="container flex justify-evenly px-5 py-24 mx-auto">
+      <div className="container flex flex-col lg:flex-row justify-evenly gap-5 lg:gap-0 px-5 py-24 mx-auto">
         <div className="md:w-2/5 md:pl-6">
           <h2 className="text-start text-2xl font-medium text-gray-900 sm:text-3xl title-font">
             Conviértete en Distribuidora H2O Deportiva
@@ -17,7 +17,7 @@ function Contact() {
             impulsa a llevar la mejor ropa deportiva de mujer directamente a tus
             manos para que puedas emprender tu propio negocio de reventa.
           </p>
-          <div className="flex justify-end mt-10">
+          <div className="flex justify-start lg:justify-end mt-10">
             <Link to="https://bit.ly/h2odeportiva" target="_blank">
               <div className="inline-flex items-center text-orange-600 hover:text-[#DE8A2E]">
                 ¡Únete a nuestra red de distribuidoras ahora!

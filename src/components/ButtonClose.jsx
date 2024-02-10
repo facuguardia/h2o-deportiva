@@ -3,7 +3,7 @@ function ButtonClose({ toggleModal }) {
     <button
       onClick={toggleModal}
       type="button"
-      className="absolute top-10 right-10 text-gray-400 hover:text-white"
+      className=" text-gray-400 hover:text-white rounded-full bg-black  p-1 transition-all duration-300 ease-in-out"
       data-modal-hide="defaultModal"
     >
       <svg

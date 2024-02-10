@@ -23,7 +23,7 @@ function Navbar() {
           </HashLink>
         </div>
 
-        <nav className="flex flex-wrap items-center justify-center text-base md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700">
+        <nav className="hidden lg:flex flex-wrap items-center justify-center text-base md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700">
           <ul>
             <HashLink to="#header" className="mr-5 hover:text-white">
               Inicio
@@ -40,7 +40,7 @@ function Navbar() {
           </ul>
         </nav>
         <button
-          className="flex items-end px-3 py-1 mt-4 text-white bg-gray-800 border-0 rounded focus:outline-none hover:bg-gray-700 md:mt-0"
+          className="hidden lg:flex items-end px-3 py-1 mt-4 text-white bg-gray-800 border-0 rounded focus:outline-none hover:bg-gray-700 md:mt-0"
           onClick={() => download()}
         >
           Catálogo

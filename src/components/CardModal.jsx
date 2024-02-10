@@ -1,8 +1,13 @@
+import ButtonClose from "./ButtonClose";
 import ButtonMP from "./ButtonMP";
 
-function CardModal({ title, description, importantInfo, image }) {
+function CardModal({ title, description, importantInfo, image, toggleModal }) {
   return (
-    <div className="w-full h-auto bg-gray-700 rounded-lg shadow sm:flex sm:flex-row sm:justify-center ">
+    <div className="relaitve w-full h-[50%] bg-gray-700 rounded-lg shadow sm:flex sm:flex-row sm:justify-center ">
+      {/* Boton cerrar */}
+      <div className="absolute top-0 right-0">
+        <ButtonClose toggleModal={toggleModal} />
+      </div>
       {/* Imagen */}
       <div className="p-4 sm:w-1/2 sm:flex sm:flex-col sm:items-center">
         <img
