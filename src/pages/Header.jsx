@@ -3,7 +3,7 @@ import { HashLink } from "react-router-hash-link";
 
 function Header() {
   return (
-    <section id="header" className="text-gray-400 bg-gray-900 body-font">
+    <section id="header" className="text-gray-400 bg-gray-900 body-font mt-5">
       <div className="container flex flex-col items-center px-5 py-24 mx-auto md:flex-row">
         <div className="flex flex-col items-center mb-16 text-center lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 md:items-start md:text-left md:mb-0">
           <h1 className="mb-4 text-3xl font-medium text-white title-font sm:text-4xl">
