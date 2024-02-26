@@ -18,7 +18,7 @@ function CardProducts({image, article, price, description, importantInfo = "Reti
         {article}
       </h2>
       <p className="mt-1 text-2xl font-semibold text-right text-white">$ {price}</p>
-      <Modal title={article} description={description} importantInfo={importantInfo} image={image} />
+      <Modal title={article} description={description} importantInfo={importantInfo} image={image} price={price} />
     </div>
   </div>
   )
