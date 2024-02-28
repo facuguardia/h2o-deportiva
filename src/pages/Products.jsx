@@ -22,6 +22,7 @@ const Products = () => {
             actual. Confeccionado con materiales de alta calidad, este
             pantalón chupin ofrece un ajuste ceñido y cómodo que realza
             la figura masculina con estilo y elegancia."
+            linkMP="https://mpago.la/1EXBNt4"
           />
 
           {/* Articulo 2 */}
@@ -31,6 +32,7 @@ const Products = () => {
             article="Art 55 - Top negro espalda en v"
             importantInfo=""
             description="El top negro espalda en V es una prenda elegante y sofisticada que te hará lucir radiante en cualquier ocasión. Confeccionado con materiales de alta calidad, este top ofrece un ajuste ceñido y cómodo, realzando tu figura de manera elegante. Su espalda en forma de V agrega un toque de sensualidad y estilo."
+            linkMP="https://mpago.la/336UEAC"
           />
 
           {/* Articulo 3 */}
@@ -44,6 +46,7 @@ const Products = () => {
             actual. Confeccionado con materiales de alta calidad, este
             pantalón chupin ofrece un ajuste ceñido y cómodo que realza
             la figura masculina con estilo y elegancia."
+            linkMP="https://mpago.la/1cbThgf"
           />
 
           {/* Articulo 4 */}
@@ -53,6 +56,7 @@ const Products = () => {
             article="Art 38 - Remera cubre top"
             importantInfo=""
             description="La remera cubre top es una prenda versátil y moderna que combina estilo y comodidad. Confeccionada con materiales de alta calidad, esta remera ofrece un ajuste ceñido y favorecedor. Su diseño único y elegante la convierte en una opción perfecta para cualquier ocasión."
+            linkMP="https://mpago.la/1bvSBKw"
           />
         </div>
 

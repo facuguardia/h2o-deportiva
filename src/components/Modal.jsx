@@ -2,7 +2,7 @@ import { useState } from "react";
 import ButtonModal from "./ButtonModal";
 import CardModal from "./CardModal";
 
-function Modal({ title, description, importantInfo, image, price }) {
+function Modal({ title, description, importantInfo, image, price, linkMP }) {
   const [modalVisible, setModalVisible] = useState(false);
 
   const toggleModal = () => {
@@ -34,6 +34,7 @@ function Modal({ title, description, importantInfo, image, price }) {
               image={image}
               toggleModal={toggleModal}
               price={price}
+              linkMP={linkMP}
             />
           </div>
         </div>

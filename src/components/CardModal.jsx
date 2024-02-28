@@ -1,7 +1,7 @@
 import ButtonClose from "./ButtonClose";
 import ButtonMP from "./ButtonMP";
 
-function CardModal({ title, description, importantInfo, image, toggleModal, price }) {
+function CardModal({ title, description, importantInfo, image, toggleModal, price, linkMP }) {
   return (
     <div className="relaitve w-full h-[50%] bg-gray-700 rounded-lg shadow sm:flex sm:flex-row sm:justify-center ">
       {/* Boton cerrar */}
@@ -38,7 +38,7 @@ function CardModal({ title, description, importantInfo, image, toggleModal, pric
 
         {/* Boton comprar */}
         <div className="w-full flex justify-center">
-          <ButtonMP price={price} />
+          <ButtonMP price={price} linkMP={linkMP}/>
         </div>
       </div>
     </div>

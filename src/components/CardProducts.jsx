@@ -1,6 +1,6 @@
 import Modal from "./Modal"
 
-function CardProducts({image, article, price, description, importantInfo = "Retirar en sucursal"}) {
+function CardProducts({image, article, price, description, importantInfo = "Retirar en sucursal", linkMP}) {
   return (
     <div className="w-full p-4 lg:w-1/4 md:w-1/2">
     <a className="overflow-hidden rounded">
@@ -18,7 +18,7 @@ function CardProducts({image, article, price, description, importantInfo = "Reti
         {article}
       </h2>
       <p className="mt-1 text-2xl font-semibold text-right text-white">$ {price}</p>
-      <Modal title={article} description={description} importantInfo={importantInfo} image={image} price={price} />
+      <Modal title={article} description={description} importantInfo={importantInfo} image={image} price={price} linkMP={linkMP}/>
     </div>
   </div>
   )
